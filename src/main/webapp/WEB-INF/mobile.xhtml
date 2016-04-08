@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pm="http://primefaces.org/mobile">
+
+    <f:view renderKitId="PRIMEFACES_MOBILE" />
+
+    <h:head>
+        <h:outputStylesheet name="mobile/css/demo.css" />
+        <h:outputStylesheet name="main/css/sh.css" />
+        <ui:insert name="head" />
+        <meta name="keywords" content="led tuxtla"/>
+        <meta name="keywords" content="led chiapas"/>
+        <meta name="keywords" content="LED CHIAPAS"/>
+        <meta name="keywords" content="LED TUXTLA"/>
+        <meta name="keywords" content="iluminacion tuxtla"/>
+        <meta name="keywords" content="iluminacion chiapas"/>
+        <meta name="keywords" content="lamparas tuxtla"/>
+        <meta name="keywords" content="focos tuxtla"/>
+        <meta name="keywords" content="luz tuxtla"/>
+        <meta name="keywords" content="Boulevard las Palmas N.505 Col. Las Palmas, Plaza San Jose Local 5 , Tuxtla Gutierrez, Chiapas."/>
+    </h:head>
+
+    <h:body>
+
+        <pm:page styleClass="jqm-demos">            
+            <pm:header styleClass="jqm-header">
+                <h2><a href="http://dmitechnologyled.com.mx/"> <p:graphicImage name="mobile/images/logo.png"  alt="DMI Technology Led" style="display: none;" /></a></h2>
+                <p><span class="logoDarkText">DMITECHNOLOGYLED</span><span class="logoBlueText">.COM.MX</span></p>
+                <a class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" href="#menu" data-role="button" role="button">Menu</a>
+            </pm:header>
+
+            <ui:insert name="content" />
+
+            <h:form>
+                <div id="menu" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+                    <a href="http://dmitechnologyled.com.mx/"><p:graphicImage name="mobile/images/logoDmi.png"  alt="DMI Technology Led" style="max-width: 250px; max-height: 332px;" /></a>
+                    <p:menu> 
+                        <p:submenu label="ILUMINAMOS TU ESPACIO">
+                            <p:menuitem value="INICIO" action="/index.xhtml" />
+                            <p:menuitem value="¿QUIÉNES SOMOS?" action="/pages/quienesSomos.xhtml" />
+                            <p:menuitem value="NOVEDADES"  action="/pages/novedades.xhtml"/>
+                            <p:menuitem value="CONTACTO" action="/pages/contacto.xhtml" />
+                        </p:submenu>
+                        <p:submenu label="OFERTA">
+                            <p:menuitem value="SERVICIOS" action="/pages/oferta/servicios.xhtml" />
+                            <p:menuitem value="PRODUCTOS" action="/pages/oferta/productos.xhtml" />
+                        </p:submenu>
+                    </p:menu>
+                </div>
+            </h:form>
+            <pm:footer styleClass="jqm-footer" fixed="true" tapToggle="false">
+                <!--<p>by @abelitroo corriendo y desplegado en exclusiva para ursula</p>-->
+                <p><a href="http://dmitechnologyled.com.mx/">DMI Technology LED</a> Boulevard las Palmas N.505 Col. Las Palmas, Plaza San Jose Local 5 29040 Tuxtla Gutierrez, Chiapas </p>
+            </pm:footer>
+
+        </pm:page>
+
+        <script language="javascript" src="#{request.contextPath}/resources/main/js/sh.js"></script>
+        <script language="javascript">
+            SyntaxHighlighter.all();
+        </script>
+    </h:body>
+
+</html>

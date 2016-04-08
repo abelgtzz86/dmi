@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:pm="http://primefaces.org/mobile"
+                template="/WEB-INF/mobile.xhtml">
+
+    <ui:define name="content">
+        <pm:content styleClass="jqm-content">
+            <h:form id="welcomeForm">
+                <p:panel header="¿QUIÉNES SOMOS?">
+                    <h:outputText value="Somos una organización fundada en 1990, que brinda servicios y productos a toda la región. Estamos capacitados para ofrecerle la atención que necesita de forma oportuna y profesional. Contamos con los recursos necesarios para brindarle un servicio de calidad." />
+                </p:panel>
+            </h:form> 
+        </pm:content>
+    </ui:define>
+
+</ui:composition>

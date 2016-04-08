@@ -1,0 +1,29 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:pm="http://primefaces.org/mobile"
+                template="/WEB-INF/mobile.xhtml">
+
+    <ui:define name="content">
+        <pm:content styleClass="jqm-content">
+            <h:form id="welcomeForm">
+                <p:tab title="contacto.xhtml">
+                    <p:panel header="CONTACTO">
+                        <h:outputText value="Encuéntrenos en:
+
+                                      Dirección: DMI Technology LED
+                                      Boulevard las Palmas N.505 Col. Las Palmas, Plaza San Jose Local 5 
+                                      29040 Tuxtla Gutierrez, Chiapas
+
+                                      Teléfono: 9616697942
+
+                                      E-mail: gerencia.dmiled@gmail.com" />
+                    </p:panel>
+                </p:tab>
+            </h:form> 
+        </pm:content>
+    </ui:define>
+
+</ui:composition>
